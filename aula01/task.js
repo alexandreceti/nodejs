@@ -1,5 +1,6 @@
 const yargs = require("yargs");
-
+const chalk = require("chalk");
+const taskUtil = require("./taskUtil")
 //console.log(process.argv);
 
 yargs.version('1.2.7');
@@ -14,12 +15,14 @@ yargs.command({
             type: 'string',
         },
         description: {
-            describe: 'task name',
+            describe: 'task Description',
             demandOption: true,
             type: 'string',
         }
     },
     handler: function (yargs){
+        const info = chalk.green.bold('Creating a new task:')
+        console.log(info)
         console.log(yargs.name);
         console.log(yargs.description);
     }
@@ -34,6 +37,8 @@ yargs.command({
         }
     },
     handler: function (yargs){
+        const info = chalk.red.bold('Remove a task:')
+        console.log(info)
         console.log(yargs.name);
     }
 }).command({
