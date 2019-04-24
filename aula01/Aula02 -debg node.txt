@@ -1,0 +1,9 @@
+node --inspect-brk task.js add --name "lavar roupa" --description "roupa suja"
+
+no chrome://inspect/#devices
+
+yargs.parse();
+yargs.parse();
+strAUp65tYXoMTcirP9Uae0AaRPosw4zg46mjRmTlztBEIEAfcv8yhX9dHfZ
+
+https://www.worldtradingdata.com/api/v1/stock?symbol=PETR4.SA&api_token=strAUp65tYXoMTcirP9Uae0AaRPosw4zg46mjRmTlztBEIEAfcv8yhX9dHfZ
